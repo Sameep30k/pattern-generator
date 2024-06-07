@@ -1,0 +1,90 @@
+/* Resetting default browser margins, paddings and setting the box-sizing to border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Applying a new gradient background to the body with a modern color palette */
+body {
+    background: linear-gradient(to right, #ebeb4e, #e6514b 99%, #ff0e0e);
+    color: #fff;
+    font-family: 'Poppins', sans-serif; /* Updated to a modern font */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Styling for the row container to include a subtle shadow and border radius for a card-like appearance */
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+/* Project title styling with a new font family, size, and color for a crisp look */
+.project-title {
+    font-family: 'Roboto', sans-serif; /* Changed to 'Roboto' for a cleaner look */
+    font-size: 2.5rem;
+    color: #4A4A4A; /* Darker text color for better readability */
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+    width: 100%;
+}
+
+/* Container for forms, given a semi-transparent background with rounded corners */
+.form-container {
+    background: rgba(255, 255, 255, 0.8); /* Updated to a lighter, semi-transparent background */
+    padding: 20px; /* Increased padding for better spacing */
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Styling for the pattern container with a bold gradient background and monospaced font */
+#pattern {
+    font-family: 'Courier New', monospace; /* Kept monospaced font for a code-like appearance */
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, #667eea, #764ba2); /* New gradient background */
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff5b8; /* Light yellow text for high contrast */
+    text-align: center;
+}
+
+/* Spacing between form elements */
+.form-group {
+    margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+/* Primary button styling with a subtle gradient and rounded corners */
+.btn-primary {
+    background: linear-gradient(to right, #102fe3, #ff7eb3); /* Gradient background for buttons */
+    border-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background 0.3s; /* Smooth transition effect */
+}
+
+/* Hover effect for the primary button */
+.btn-primary:hover {
+    background: linear-gradient(to right, #251563, #be3bff); /* Slightly darker gradient on hover */
+    border-color: #ff759a;
+}
+
+/* Responsive design adjustments for smaller screens */
+@media (max-width: 768px) {
+    .form-container, #pattern {
+        margin: 20px 0;
+    }
+
+    .project-title {
+        font-size: 2rem;
+    }
+}
